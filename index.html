@@ -1,28 +1,81 @@
-<！doctype超文本标记语言>
-<超文本标记语言>
-  <头>
-	<元字符集="utf-8"姓名="视口"内容="宽度=设备宽度，初始比例=1，最大比例=1，用户可缩放=否">
-	<标题>webcat</标题>
-<风格>
-*{
-边缘:0;
-填充:0;
-}
-IMG{
-宽度:100%;
-}
-H1{
-文本对齐:中心;
-}
-.nc{
-文本对齐:中心;
-}
-</风格>
-  </头>
-  <身体>	
-	<IMGsrc="IMG_20230819_150823.jpg">
-    <H1>XTL万岁</H1>
-    <p><H1>纳粹万岁</H1></p>
- <H1> <一个href="https://v.kuaishou.com/BYbqj">网站作者</一个></H1>
-  </身体>
-</超文本标记语言>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+		<title>有惊喜---716</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				user-select: none;
+				-webkit-user-select: none;
+			}
+			body{
+				background: black;
+			}
+			img{
+				width:100%;
+				height:auto;
+				animation: img 1.2s;
+				-webkit-filter: brightness(220%);
+                filter: brightness(220%);
+			}
+			#a{
+				position: absolute;
+				top:0;
+				left:0;
+				display: flex;
+				z-index:1;
+				justify-content: center;
+				align-items: center;
+			}
+			#bt{
+				display: flex;
+				width:210px;
+				height:70px;
+		        border-radius:15px;
+				font-weight: 600;
+				font-size:6vw;
+				justify-content: center;
+				align-items: center;
+				background:linear-gradient(to bottom, #c69999, #ff1212);
+			}
+			#bt:active{
+				background: linear-gradient(to bottom, #d31515, #463131);
+			}
+			h2{
+				position: absolute;
+				top:180px;
+				color: #d31515;
+				font-size: 9.7vw;
+			}
+			@keyframes img{
+				0%{
+					-webkit-filter: brightness(20%);
+                filter: brightness(20%);
+				}
+			}
+		</style>
+	</head>
+	<script>
+			window.onload=function(){
+				document.getElementById("a").style.cssText="width:"+innerWidth+"px;"+"height:"+innerHeight+"px;"
+			var 	bt=document.getElementById("bt")
+			bt.onclick=function (){
+					this.style.display="none"
+					document.getElementById("a").style.cssText="display:none;"
+					var img=document.createElement("img")
+					img.src="https://pic.baike.soso.com/ugc/baikepic2/38170/20170701093800-1137492120.jpg/300"
+					document.body.appendChild(img)
+				}
+			}
+	</script>
+	<body>
+		<div id="a">
+			<h2>打开有惊喜！</h2>
+			<div id="bt">打开</div>
+		</div>
+		
+	</body>
+</html>
+
